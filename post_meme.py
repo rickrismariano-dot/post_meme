@@ -64,7 +64,7 @@ def get_meme(tries=6):
 
 def post(webhook_url, meme):
     payload = {
-        "username": "Meme Machine",
+        "username": "Operation Manager",
         "embeds": [
             {
                 "title": meme.get("title", "meme")[:250],
