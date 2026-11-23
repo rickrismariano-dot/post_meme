@@ -3,7 +3,7 @@ name: Random meme to Discord
 on:
   schedule:
     # 00:00 and 12:00 UTC = 08:00 and 20:00 in Manila. GitHub may start it 10 to 30 minutes late.
-    - cron: "0 0,12 * * *"
+    - cron: "0 */2 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
